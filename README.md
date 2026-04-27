@@ -1,4 +1,4 @@
-# @mahfuzar/use-bangladesh
+# @mahfuzar/bd-geo
 
 React hooks for Bangladesh **divisions**, **districts**, and **upazilas** — with Bengali name support.
 
@@ -14,7 +14,7 @@ React hooks for Bangladesh **divisions**, **districts**, and **upazilas** — wi
 ## Installation
 
 ```bash
-npm install @mahfuzar/use-bangladesh
+npm install @mahfuzar/bd-geo
 ```
 
 ---
@@ -24,7 +24,7 @@ npm install @mahfuzar/use-bangladesh
 ### `useDivisions()` — সব বিভাগ
 
 ```tsx
-import { useDivisions } from '@mahfuzar/use-bangladesh';
+import { useDivisions } from '@mahfuzar/bd-geo';
 
 function DivisionSelect() {
     const { divisions } = useDivisions();
@@ -46,7 +46,7 @@ function DivisionSelect() {
 ### `useDistricts(divisionId?)` — জেলা
 
 ```tsx
-import { useDistricts } from '@mahfuzar/use-bangladesh';
+import { useDistricts } from '@mahfuzar/bd-geo';
 
 function DistrictSelect({ divisionId }: { divisionId?: number }) {
     const { districts } = useDistricts(divisionId); // divisionId দিলে filtered
@@ -68,7 +68,7 @@ function DistrictSelect({ divisionId }: { divisionId?: number }) {
 ### `useUpazilas(districtId?)` — উপজেলা
 
 ```tsx
-import { useUpazilas } from '@mahfuzar/use-bangladesh';
+import { useUpazilas } from '@mahfuzar/bd-geo';
 
 function UpazilaSelect({ districtId }: { districtId?: number }) {
     const { upazilas } = useUpazilas(districtId);
@@ -90,7 +90,7 @@ function UpazilaSelect({ districtId }: { districtId?: number }) {
 ### `useBangladesh()` — সব একসাথে + helpers
 
 ```tsx
-import { useBangladesh } from '@mahfuzar/use-bangladesh';
+import { useBangladesh } from '@mahfuzar/bd-geo';
 
 function AddressForm() {
     const [divisionId, setDivisionId] = useState<number>();
