@@ -2,7 +2,7 @@
 	"name": "@mahfuzar/bd-geo",
 	"version": "1.0.0",
 	"description": "React hooks for Bangladesh divisions, districts and upazilas",
-	"author": "Mahfuzar",
+	"author": "Mahfuzar Rahman <mahfuzarcse@gmail.com>",
 	"license": "MIT",
 	"keywords": [
 		"bangladesh",
@@ -19,9 +19,6 @@
 		"url": "https://github.com/mahfuzar07/bd-geo.git"
 	},
 	"homepage": "https://github.com/mahfuzar07/bd-geo#readme",
-	"bugs": {
-		"url": "https://github.com/mahfuzar07/bd-geo/issues"
-	},
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
