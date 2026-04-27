@@ -1,0 +1,53 @@
+{
+	"name": "@mahfuzar/bd-geo",
+	"version": "1.0.0",
+	"description": "React hooks for Bangladesh divisions, districts and upazilas",
+	"author": "Mahfuzar",
+	"license": "MIT",
+	"keywords": [
+		"bangladesh",
+		"react",
+		"hooks",
+		"division",
+		"district",
+		"upazila",
+		"geodata",
+		"bd"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mahfuzar07/bd-geo.git"
+	},
+	"homepage": "https://github.com/mahfuzar07/bd-geo#readme",
+	"bugs": {
+		"url": "https://github.com/mahfuzar07/bd-geo/issues"
+	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"lint": "tsc --noEmit",
+		"prepublishOnly": "npm run build"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.0",
+		"react": "^18.0.0",
+		"tsup": "^8.0.0",
+		"typescript": "^5.0.0"
+	}
+}
